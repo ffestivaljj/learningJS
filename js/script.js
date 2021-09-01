@@ -1,22 +1,21 @@
 "use strict";
 
-// //1
-// const nOf = prompt ("Ckolko filmov smotreli", "?");
-// console.log(nOf);
+//1
+const nOf = +prompt ("Ckolko filmov smotreli", "?");
+console.log(nOf);
 
-// //2
-// const personalMovieDB = {
-//     count: `${nOf}`,
-//     moveis: {},
-//     actors: {},
-//     genres: [],
-//     privat: false
-// };
+//2
+const personalMovieDB = {
+    count: nOf,
+    moveis: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
 
-// console.log(personalMovieDB);
+console.log(personalMovieDB);
 
 //3
-
 const arr = [];
 const qFilm1 = prompt ('1. What is the last movie?',"Spider-man");
 const filmRate1 = prompt ('1. How much?',"9.5");
