@@ -1,69 +1,69 @@
 "use strict";
 
-let a = 5,
-    b = a;
-b = b + 5;
-console.log(a);
-console.log(b);
+// let a = 5,
+//     b = a;
+// b = b + 5;
+// console.log(a);
+// console.log(b);
 
-const obj = {
-    a:55,
-    b:12
-};
+// const obj = {
+//     a:55,
+//     b:12
+// };
 
-// const copy = obj;
+// // const copy = obj;
 
-// copy.a = 10;
-// console.log(copy);
-// console.log(obj);
+// // copy.a = 10;
+// // console.log(copy);
+// // console.log(obj);
 
-function copy(mainObj) {
-    let objCopy = {};
+// function copy(mainObj) {
+//     let objCopy = {};
 
-    let key;
-    for (key in mainObj) {
-        objCopy[key] = mainObj[key];
-    }
+//     let key;
+//     for (key in mainObj) {
+//         objCopy[key] = mainObj[key];
+//     }
 
-    return objCopy;
-}
+//     return objCopy;
+// }
 
-const numbers = {
-    a: 2,
-    b: 5,
-    c: {
-        a: 7,
-        b: 3
-    }
-};
+// const numbers = {
+//     a: 2,
+//     b: 5,
+//     c: {
+//         a: 7,
+//         b: 3
+//     }
+// };
 
-const newNumbers = copy(numbers);
-newNumbers.a = 111;
-console.log(newNumbers);
-console.log(numbers);
+// const newNumbers = copy(numbers);
+// newNumbers.a = 111;
+// console.log(newNumbers);
+// console.log(numbers);
 
-const add = {
-    d:14,
-    e:20
-};
+// const add = {
+//     d:14,
+//     e:20
+// };
 
-const clone = Object.assign({},add);
-clone.d = 20;
-// console.log(add);
-// console.log(clone);
+// const clone = Object.assign({},add);
+// clone.d = 20;
+// // console.log(add);
+// // console.log(clone);
 
-const oldArray = ['a', 'b', 'c'];
-const newArray = oldArray.slice();
+// const oldArray = ['a', 'b', 'c'];
+// const newArray = oldArray.slice();
 
-newArray[1] = 'asdasd';
-console.log(newArray);
-console.log(oldArray);
+// newArray[1] = 'asdasd';
+// console.log(newArray);
+// console.log(oldArray);
 
-const video = ['yt', 'vimeo', 'rutube'],
-        blogs = ['wp', 'lj', 'blogger'],
-        internet = [...video, ...blogs, 'vk', 'facebook'];
+// const video = ['yt', 'vimeo', 'rutube'],
+//         blogs = ['wp', 'lj', 'blogger'],
+//         internet = [...video, ...blogs, 'vk', 'facebook'];
 
-console.log(internet);
+// console.log(internet);
 
 
 // const arr = [1, 80, 2, 4, 6, 8];
@@ -100,3 +100,21 @@ console.log(internet);
 // const products = str.split(" ");
 // products.sort();
 // console.log(products.join('; '));
+
+// const soldier = {
+//     health: 400,
+//     armor: 100,
+//     sayHello: function() {
+//         console.log("Hello");
+//     }
+// };
+
+// const jonh = Object.create(soldier);
+
+// // const jonh = {
+// //     health: 100
+// // };
+
+// // Object.setPrototypeOf(jonh, soldier);
+
+// jonh.sayHello();
