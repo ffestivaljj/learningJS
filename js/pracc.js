@@ -1,5 +1,25 @@
 "use strict";
 
+console.log(!!"44444");
+
+// function hello() {
+//     console.log("Hello wOrld");
+// }
+// hello();
+
+// function hi() {
+//     console.log("Hi");
+// }
+// hi();
+
+// const arr = [1, 14, 4, 30, 54],
+//       sorted = arr.sort(compareNum);
+
+// function compareNum(a,b) {
+//     return a-b;
+// }
+// console.log(sorted);
+
 // let a = 5,
 //     b = a;
 // b = b + 5;
